@@ -1,0 +1,26 @@
+.jumbotron{
+    font-family: 'Rock Salt', cursive;
+}
+
+.main-game{
+    background-image: url(../img/question-marks-background.jpg);
+}
+
+#div_msg{
+    margin: 5vh 0;
+    font-size: 4vh;
+}
+
+.botao{
+    text-align: center;
+}
+
+#btnReiniciar{
+    background-color: #888484;
+    border-radius: 1vh;
+    border: none;
+    width: 20vh;
+    height: 5vh;
+    font-weight: bold;
+    color: white;
+}

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/sprite.css">
+    <link rel="stylesheet" href="css/lacuna.css">
+    <link rel="stylesheet" href="css/changes.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap" rel="stylesheet">
+    <title>Jogo da Forca</title>
+</head>
+
+<body class="main-game">
+    <div class="jumbotron">
+        <h2 class="text-center">Jogo da forca</h2>
+    </div>
+    <div class="container">
+
+        <!-- div com a classe sprite -->
+        <div class="sprite"></div>
+
+        <ul class="lacunas text-center"></ul>
+
+        <div class="text-center">
+            <input id="entrada" class="entrada" placeholder="Palavra secreta" autofocus>
+        </div>
+    </div>
+
+    <div class="text-center" id="div_msg"></div>
+
+    <div class="botao">
+        <input type="button" value="Reiniciar jogo" id="btnReiniciar" onclick="reiniciar()">
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/sprite.js"></script>
+    <script src="js/jogo.js"></script>
+    <script src="js/controller.js"></script>
+    <script src="js/reinicia.js"></script>
+    <script>
+        criaController(
+            criaJogo(
+                createSprite('.sprite')
+            )
+        ).inicia();
+    </script>
+</body>
+
+</html>
